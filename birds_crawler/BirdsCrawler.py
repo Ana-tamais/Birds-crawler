@@ -27,7 +27,8 @@ class BirdCrawler:
     def __init__(self, store_path = '', 
                  initial_link_photo = "https://www.wikiaves.com.br/especies.php?t=t&o=5", 
                  initial_link_sound = "https://www.wikiaves.com.br/especies.php?t=t&o=4",
-                 photo = True):
+                 photo = True,
+                 html = True):
         """
         inputs:
         store_path, photo (photo = True) or audio (photo = False) and 
@@ -57,6 +58,7 @@ class BirdCrawler:
         self.browser = None
         self.soup = None
         self.photo = photo
+        self.html = html
         
     def connect_to_internet(self):
         """
@@ -106,10 +108,14 @@ class BirdCrawler:
             os.mkdir(self.path + "/images")
             for especie in self.species_list:
                 os.mkdir(self.path + "/images/{}".format(especie))
-        else:
+            if self.html == True:
+                os.mkdir(self.path + '/links_image')
+        elif self.photo == False:
             os.mkdir(self.path + '/sounds')
             for especie in self.species_list:
                 os.mkdir(self.path + "/sounds/{}".format(especie))
+            if self.html == True:
+                os.mkdir(self.path + '/links_sound')   
     
     def export_links_to_txt(self):
         """
@@ -126,7 +132,7 @@ class BirdCrawler:
     
     def import_links_from_txt(self):
         """
-        It imports .txt file which store all links that will be accessed
+        It imports .txt file which stores all links that will be accessed
         """
         if self.photo == True:
             links_photo = open(self.path +"/links_photo.txt", "r")
@@ -162,7 +168,10 @@ class BirdCrawler:
                         print(j, "iterations")
                     self.browser.execute_script("window.scrollTo(0, {})".format(2000 + i))
                     i += 2000
-                self.save_images(self.browser, especie)
+                if self.html == False:
+                    self.save_images(self.browser, especie)
+                else:
+                    self.save_links(self.browser, especie)
     
     def crawl_one_audio_link(self, especie):
         """
@@ -186,6 +195,8 @@ class BirdCrawler:
                         print(j, "iterations")
                     self.browser.execute_script("window.scrollTo(0, {})".format(2000 + i))
                     i += 2000
+                if self.html == True:
+                    self.save_links(self.browser, especie)
                 self.save_sounds(self.browser, especie)
     
     def save_sounds(self, browser, especie):
@@ -193,40 +204,73 @@ class BirdCrawler:
         After scroll down all the page on crawl_one_audio_link, it saves the html and save all audios on
         the directory
         """
-        html = browser.page_source
-        self.soup = BeautifulSoup(html, 'html.parser')
-        sounds = self.soup.find_all(class_ = 'mejs-container svg wikiaves-player progression-single progression-skin progression-minimal-dark progression-audio-player mejs-audio')
-        i = 1
-        for sound in range(len(sounds)):
-            try:
-                save = sounds[sound]['src']
-                my_filename = os.path.join(self.path + "/sounds/{}/".format(especie) + "{}{}.mp3".format(especie, i))
-                with open(my_filename, 'w') as handle:
-                    print(file=handle)
-                urllib.request.urlretrieve(save, self.path + '/sounds/{}/'.format(especie) + '{}{}.mp3'.format(especie, i)) 
-                i += 1
-            except:
-                a = 'a'
-        del html
-        self.soup = None
+        if self.html == False:
+            html = browser.page_source
+            self.soup = BeautifulSoup(html, 'html.parser')
+            sounds = self.soup.find_all(class_ = 'mejs-container svg wikiaves-player progression-single progression-skin progression-minimal-dark progression-audio-player mejs-audio')
+            i = 1
+            for sound in range(len(sounds)):
+                try:
+                    save = sounds[sound]['src']
+                    my_filename = os.path.join(self.path + "/sounds/{}/".format(especie) + "{}{}.mp3".format(especie, i))
+                    with open(my_filename, 'w') as handle:
+                        print(file=handle)
+                    urllib.request.urlretrieve(save, self.path + '/sounds/{}/'.format(especie) + '{}{}.mp3'.format(especie, i)) 
+                    i += 1
+                except:
+                    a = 'a'
+            del html
+            self.soup = None
+            del sounds
+        else:
+            my_filename = os.path.join(self.path + "/links_sound/links_{}.txt".format(especie))
+            with open(my_filename, "r") as file:
+                links = file.read()
+            print(links)
+        
 
     def save_images(self, browser, especie):
         """
         After scroll down all the page on crawl_one_photo_link, it saves the html and save all photos on
         the directory
         """
+        if self.html == False:
+            html = browser.page_source
+            self.soup = BeautifulSoup(html, 'html.parser')
+            imagens = self.soup.find_all(class_ = 'img-responsive')
+            for imagem in range(len(imagens)):
+                save = imagens[imagem]['src']
+                my_filename = os.path.join(self.path + "/images/{}/".format(especie) + '{}{}.jpg'.format(especie, imagem))
+                with open(my_filename, "w")as handle:
+                    print(file=handle)
+                urllib.request.urlretrieve(save, self.path + "/images/{}/".format(especie) + '{}{}.jpg'.format(especie, imagem))
+            del html
+            self.soup = None
+            del imagens
+        else:
+            my_filename = os.path.join(self.path + "/links_photo/links_{}.txt".format(especie))
+            with open(my_filename, "r") as handle:
+                print(file=handle)
+                links = handle.read()
+                links = links.split('\n')
+            print(links[0])
+            
+    
+    def save_links(self, browser, especie):
+        """
+        Save and export image or audio links to be saved before on directory
+        """
         html = browser.page_source
         self.soup = BeautifulSoup(html, 'html.parser')
-        imagens = self.soup.find_all(class_ = 'img-responsive')
-        for imagem in range(len(imagens)):
-            save = imagens[imagem]['src']
-            my_filename = os.path.join(self.path + "/images/{}/".format(especie) + '{}{}.jpg'.format(especie, imagem))
-            with open(my_filename, "w")as handle:
-                print(file=handle)
-            urllib.request.urlretrieve(save, self.path + "/images/{}/".format(especie) + '{}{}.jpg'.format(especie, imagem))
-        del html
-        self.soup = None
-        del imagens
+        links = self.soup.find_all(class_= 'img-responsive')
+        if self.photo == True:
+            my_filename = os.path.join(self.path + "/links_photo/links_{}.txt".format(especie))
+        else:
+            my_filename = os.path.join(self.path + "/links_sound/links_{}.txt".format(especie))
+        with open(my_filename, "w") as handle:
+            for link in range(len(links)):
+                save = (links[link]['src'] + "\n")
+                handle.write(save)
     
     def crawl_lots_of_photo_links(self, especies):
         """
@@ -250,21 +294,22 @@ class BirdCrawler:
         self.connect_to_internet()
         print("Connected to internet!")
         self.get_information()
-        print("All information was collected!")
+        print("All information were collected!")
         try:
             self.create_dir()
         except:
             a = 'a'
-        print("All directories was created")
+        print("All directories were created")
         self.export_links_to_txt()
         print("Exported links to txt!")
         if self.photo == True:
             self.crawl_lots_of_photo_links(especies)
-            print("All photos was crawled")
+            print("All photos were crawled")
         else:
             self.crawl_lots_of_sound_links(especies)
-            print("All sounds was crawled")
+            print("All sounds were crawled")
         self.browser.close()
+    
     
 
 
