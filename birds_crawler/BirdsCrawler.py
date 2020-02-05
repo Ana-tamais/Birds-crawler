@@ -122,7 +122,7 @@ class BirdCrawler:
         Export all links which will be accessed to a .txt
         """
         if self.photo == True:
-            file_photo = open(self.path + "/links_photo.txt", "w")
+            file_photo = open(self.path + "/links_image.txt", "w")
             for k in range(len(self.bird_link_list_photo)):
                 file_photo.write(self.bird_link_list_photo[k] + "\n")
         else:
@@ -168,10 +168,9 @@ class BirdCrawler:
                         print(j, "iterations")
                     self.browser.execute_script("window.scrollTo(0, {})".format(2000 + i))
                     i += 2000
-                if self.html == False:
-                    self.save_images(self.browser, especie)
-                else:
+                if self.html == True:
                     self.save_links(self.browser, especie)
+                self.save_images(self.browser, especie)
     
     def crawl_one_audio_link(self, especie):
         """
@@ -222,12 +221,40 @@ class BirdCrawler:
             del html
             self.soup = None
             del sounds
+            
+    def save_information(self, especie):
+        if self.photo == True:
+            my_filename = os.path.join(self.path + "/links_image/links_{}.txt".format(especie))
+            links = open(my_filename, "r")
+            links = links.read()
+            links = links.split('\n')[:-1]
+            i = 1
+            for link in range(len(links)):
+                try:
+                    file_ = os.path.join(self.path + "/images/{}/".format(especie) + "{}{}.jpg".format(especie, i))
+                    with open(file_, 'w') as handle:
+                        print(file=handle)
+                    urllib.request.urlretrieve(links[link], self.path + '/images/{}/'.format(especie) + '{}{}.jpg'.format(especie, i))
+                    i += 1
+                except:
+                    a = 'a'
+            del links
         else:
             my_filename = os.path.join(self.path + "/links_sound/links_{}.txt".format(especie))
-            with open(my_filename, "r") as file:
-                links = file.read()
-            print(links)
-        
+            links = open(my_filename, "r")
+            links = links.read()
+            links = links.split('\n')[:-1]
+            i = 1
+            for link in range(len(links)):
+                try:
+                    file_ = os.path.join(self.path + "/sounds/{}/".format(especie) + "{}{}.mp3".format(especie, i))
+                    with open(file_, 'w') as handle:
+                        print(file=handle)
+                    urllib.request.urlretrieve(links[link], self.path + '/sounds/{}/'.format(especie) + '{}{}.mp3'.format(especie, i))
+                    i += 1
+                except:
+                    a = 'a'
+            del links
 
     def save_images(self, browser, especie):
         """
@@ -248,12 +275,10 @@ class BirdCrawler:
             self.soup = None
             del imagens
         else:
-            my_filename = os.path.join(self.path + "/links_photo/links_{}.txt".format(especie))
-            with open(my_filename, "r") as handle:
-                print(file=handle)
-                links = handle.read()
-                links = links.split('\n')
-            print(links[0])
+            my_filename = os.path.join(self.path + "/links_image/links_{}.txt".format(especie))
+            links = open(my_filename, "r")
+            links = links.read()
+            links = links.split('\n')
             
     
     def save_links(self, browser, especie):
@@ -262,15 +287,24 @@ class BirdCrawler:
         """
         html = browser.page_source
         self.soup = BeautifulSoup(html, 'html.parser')
-        links = self.soup.find_all(class_= 'img-responsive')
         if self.photo == True:
-            my_filename = os.path.join(self.path + "/links_photo/links_{}.txt".format(especie))
+            links = self.soup.find_all(class_= 'img-responsive')
+            my_filename = os.path.join(self.path + "/links_image/links_{}.txt".format(especie))
+            with open(my_filename, "w") as handle:
+                for link in range(len(links)):                
+                    save = (links[link]['src'] + "\n")
+                    handle.write(save)
         else:
+            links = self.soup.find_all(class_ = 'mejs-container svg wikiaves-player progression-single progression-skin progression-minimal-dark progression-audio-player mejs-audio')
             my_filename = os.path.join(self.path + "/links_sound/links_{}.txt".format(especie))
-        with open(my_filename, "w") as handle:
-            for link in range(len(links)):
-                save = (links[link]['src'] + "\n")
-                handle.write(save)
+            with open(my_filename, 'w') as handle:
+                for link in range(len(links)):
+                    try:
+                        save = (links[link]['src'] + '\n')
+                        handle.write(save)
+                    except:
+                        a = 'a'
+
     
     def crawl_lots_of_photo_links(self, especies):
         """
@@ -285,7 +319,11 @@ class BirdCrawler:
         """
         for especie in especies:
             self.crawl_one_audio_link(especie)
-            
+    
+    def save_all_information(self, especies):
+        for especie in especies:
+            self.save_information(especie)
+    
     def crawl(self, especies):
         """
         It uses all the previous function to execute our crawl
@@ -311,6 +349,7 @@ class BirdCrawler:
         self.browser.close()
     
     
+    
 
 
 # In[6]:
@@ -323,6 +362,7 @@ class BirdCrawler:
 
 
 #classe.crawl(["urumutum"])
+#classe.save_all_information(['urumutum'])
 
 
 # In[ ]:
