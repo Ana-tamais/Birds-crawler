@@ -703,3 +703,17 @@ JavaScript note: https://www.wikiaves.com.br/especies.php?t=t&o=4, line 574: { o
 JavaScript error: , line 0: uncaught exception: TagError: adsbygoogle.push() error: All ins elements in the DOM with class=adsbygoogle already have ads in them.
 JavaScript error: , line 0: uncaught exception: TagError: adsbygoogle.push() error: All ins elements in the DOM with class=adsbygoogle already have ads in them.
 1580873008682	Marionette	INFO	Stopped listening on port 37777
+1580874089334	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.iKbS6ZjR3bjP"
+*** You are running in headless mode.
+1580874090023	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1580874090049	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1580874090049	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1580874090049	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1580874090049	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1580874093256	Marionette	INFO	Listening on port 41491
+1580874093351	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t&o=4, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t&o=4, line 574: { opened at line 574, column 13
+JavaScript error: , line 0: uncaught exception: TagError: adsbygoogle.push() error: All ins elements in the DOM with class=adsbygoogle already have ads in them.
+JavaScript error: , line 0: uncaught exception: TagError: adsbygoogle.push() error: All ins elements in the DOM with class=adsbygoogle already have ads in them.
+1580874109093	Marionette	INFO	Stopped listening on port 41491

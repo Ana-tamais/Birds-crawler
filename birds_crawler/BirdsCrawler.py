@@ -28,7 +28,8 @@ class BirdCrawler:
                  initial_link_photo = "https://www.wikiaves.com.br/especies.php?t=t&o=5", 
                  initial_link_sound = "https://www.wikiaves.com.br/especies.php?t=t&o=4",
                  photo = True,
-                 html = True):
+                 html = True,
+                 firefox_path = '/usr/local/bin/geckodriver'):
         """
         inputs:
         store_path, photo (photo = True) or audio (photo = False) and 
@@ -59,6 +60,7 @@ class BirdCrawler:
         self.soup = None
         self.photo = photo
         self.html = html
+        self.firefox_path = firefox_path
         
     def connect_to_internet(self):
         """
@@ -67,7 +69,9 @@ class BirdCrawler:
         firefox_profile = webdriver.FirefoxProfile()
         options = Options()
         options.add_argument('--headless')
-        self.browser = webdriver.Firefox(firefox_profile = firefox_profile, options = options)
+        self.browser = webdriver.Firefox(firefox_profile = firefox_profile, 
+                                         options = options, 
+                                         executable_path = self.firefox_path)
     
     def get_list_link_num(self):
         """
@@ -351,6 +355,7 @@ class BirdCrawler:
             self.crawl_lots_of_sound_links(especies)
             print("All sounds were crawled")
         self.browser.close()
+    
     
     
     
