@@ -10,7 +10,7 @@ class BirdCrawler:
     def __init__(self, store_path = '',
                  initial_link = 'https://www.wikiaves.com.br/especies.php?t=t',
                  photo = True,
-                 firefox_path = 'geckodriver'):
+                 firefox_path = './geckodriver'):
         
         self.specie = {}
         self.count_photo = {}
