@@ -29,7 +29,7 @@ class BirdCrawler:
                  initial_link_sound = "https://www.wikiaves.com.br/especies.php?t=t&o=4",
                  photo = True,
                  html = True,
-                 firefox_path = 'geckodriver'):
+                 firefox_path = './geckodriver'):
         """
         inputs:
         store_path, photo (photo = True) or audio (photo = False) and 

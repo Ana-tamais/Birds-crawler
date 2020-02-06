@@ -1,1 +1,1 @@
-from .BirdsCrawler import *
+from .BirdsCrawlerOptimized import *
