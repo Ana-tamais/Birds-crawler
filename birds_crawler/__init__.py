@@ -1,1 +1,1 @@
-from .BirdsCrawlerOptimized-goversion import *
+from .BirdsCrawlerOptimized_goversion import *
