@@ -1,6 +1,6 @@
 # Birds-crawler
 
-Here we gonna crawl imagens and audios from wikiaves.com.br and use deep learning to classify bird's species
+Here we gonna crawl imagens and audios from wikiaves.com.br and use deep learning to classify birds species
 
 **For crawling**
 
