@@ -19,7 +19,7 @@ class BirdCrawler:
         self.browser = None
         self.soup = None
         self.photo = photo
-        self.num_species = None
+        self.num_species = 1890
         self.firefox_path = firefox_path
         self.initial_link = initial_link
         
@@ -161,11 +161,11 @@ class BirdCrawler:
         
     def crawl(self, species):
         inicio = time.time()
-        self.connect_to_internet()
-        self.get_num_species()
+        #self.connect_to_internet()
+        #self.get_num_species()
         self.create_dir()
         self.get_id()
         self.get_all_links(species)
-        self.browser.close()
+        #self.browser.close()
         fim = time.time()
         print(fim-inicio)
