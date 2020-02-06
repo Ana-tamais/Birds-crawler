@@ -75,7 +75,7 @@ class BirdCrawler:
             self.specie['{}'.format(10000 + k)] = None
     
     def get_image_links(self, id_):
-        my_filename = os.path.join(self.path + '/links_image/links_{}.txt'.format(id_))
+        my_filename = os.path.join('./links_image/links_{}.txt'.format(id_))
         file_photo = open(my_filename, 'w')
         r = requests.get('https://www.wikiaves.com.br/getRegistrosJSON.php?tm=f&t=s&s={}&o=mp&o=mp&p=1'.format(id_))
         r = r.json()
@@ -98,7 +98,7 @@ class BirdCrawler:
             self.get_image_links(id_)
             
     def get_sound_links(self, id_):
-        my_filename = os.path.join(self.path + '/links_sound/links_{}.txt'.format(id_))
+        my_filename = os.path.join('./links_sound/links_{}.txt'.format(id_))
         file_sound = open(my_filename, 'w')
         r = requests.get('https://www.wikiaves.com.br/getRegistrosJSON.php?tm=s&t=s&s={}&o=mp&o=mp&p=1'.format(id_))
         r = r.json()
