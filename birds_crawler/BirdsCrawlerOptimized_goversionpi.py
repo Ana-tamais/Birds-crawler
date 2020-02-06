@@ -1,41 +1,21 @@
 import os
-from bs4 import BeautifulSoup
-from selenium import webdriver
 import urllib
-from selenium.webdriver.firefox.options import Options
 import requests
 import time
 
 class BirdCrawler:
     def __init__(self, store_path = '',
                  initial_link = 'https://www.wikiaves.com.br/especies.php?t=t',
-                 photo = True,
-                 firefox_path = './geckodriver'):
+                 photo = True):
         
         self.specie = {}
         self.count_photo = {}
         self.count_sound = {}
         self.path = store_path
-        self.browser = None
         self.soup = None
         self.photo = photo
         self.num_species = 1890
-        self.firefox_path = firefox_path
         self.initial_link = initial_link
-        
-    def connect_to_internet(self):
-        firefox_profile = webdriver.FirefoxProfile()
-        options = Options()
-        options.add_argument('--headless')
-        self.browser = webdriver.Firefox(firefox_profile=firefox_profile,
-                                         options=options,
-                                         executable_path=self.firefox_path)
-    def get_num_species(self):
-        self.browser.get(self.initial_link)
-        html = self.browser.page_source
-        self.soup = BeautifulSoup(html, 'html.parser')
-        self.num_species = self.soup.find_all(class_ = 'font-blue-soft')[-1].text[:4]
-        self.num_species = int(self.num_species)
 
     
     def create_dir_photo(self):
@@ -75,7 +55,7 @@ class BirdCrawler:
             self.specie['{}'.format(10000 + k)] = None
     
     def get_image_links(self, id_):
-        my_filename = os.path.join('/links_image/links_{}.txt'.format(id_))
+        my_filename = os.path.join('links_image/links_{}.txt'.format(id_))
         file_photo = open(my_filename, 'w')
         r = requests.get('https://www.wikiaves.com.br/getRegistrosJSON.php?tm=f&t=s&s={}&o=mp&o=mp&p=1'.format(id_))
         r = r.json()
@@ -161,11 +141,8 @@ class BirdCrawler:
         
     def crawl(self, species):
         inicio = time.time()
-        #self.connect_to_internet()
-        #self.get_num_species()
         self.create_dir()
         self.get_id()
         self.get_all_links(species)
-        #self.browser.close()
         fim = time.time()
         print(fim-inicio)
