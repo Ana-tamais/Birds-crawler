@@ -8,6 +8,6 @@ parser.add_argument('--dir', type=str,
                     help='set directory path to save image/audio')
 args = parser.parse_args()
 
-classe = BirdCrawlerOptimized(store_path = args.dir)
+classe = BirdCrawler(store_path = args.dir)
 classe.crawl([args.id])
 classe.save_all_photos([args.id])
