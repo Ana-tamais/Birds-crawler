@@ -1,0 +1,351 @@
+1581107172118	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.9hFvwDhCj4uz"
+*** You are running in headless mode.
+1581107173037	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581107173066	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581107173066	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581107173066	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581107173066	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581107175570	Marionette	INFO	Listening on port 45015
+1581107175630	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581107183451	Marionette	INFO	Stopped listening on port 45015
+1581107384510	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.SoVe63ssEHhL"
+*** You are running in headless mode.
+1581107385479	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581107385512	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581107385512	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581107385512	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581107385512	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581107387747	Marionette	INFO	Listening on port 42221
+1581107387821	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581107396295	Marionette	INFO	Stopped listening on port 42221
+1581107785271	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XQNnLs00nJ3c"
+*** You are running in headless mode.
+1581107786249	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581107786274	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581107786274	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581107786274	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581107786274	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581107788502	Marionette	INFO	Listening on port 42795
+1581107788586	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581107814175	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.63AYKBlmRw40"
+*** You are running in headless mode.
+1581107815263	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581107815291	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581107815291	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581107815291	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581107815291	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581107817505	Marionette	INFO	Listening on port 40223
+1581107817599	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581107827170	Marionette	INFO	Stopped listening on port 40223
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1581108027493	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XbwrF9JvV6XO"
+*** You are running in headless mode.
+1581108028341	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581108028368	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581108028368	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581108028368	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581108028368	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581108030587	Marionette	INFO	Listening on port 45659
+1581108030604	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581108040463	Marionette	INFO	Stopped listening on port 45659
+1581108323298	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8INUcAamA4br"
+*** You are running in headless mode.
+1581108324270	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581108324294	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581108324294	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581108324294	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581108324294	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581108326608	Marionette	INFO	Listening on port 44367
+1581108326710	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581108336567	Marionette	INFO	Stopped listening on port 44367
+1581108363105	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.3q792B0zAoNH"
+*** You are running in headless mode.
+1581108364102	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581108364130	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581108364130	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581108364130	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581108364131	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581108366550	Marionette	INFO	Listening on port 44179
+1581108366616	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581108377004	Marionette	INFO	Stopped listening on port 44179
+1581108399936	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.L008cyih4B7u"
+*** You are running in headless mode.
+1581108400933	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581108400956	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581108400956	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581108400957	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581108400957	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581108403136	Marionette	INFO	Listening on port 41881
+1581108403150	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581108413727	Marionette	INFO	Stopped listening on port 41881
+1581109426079	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.n6fYkL97q5wQ"
+*** You are running in headless mode.
+1581109427173	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581109427202	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581109427202	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581109427202	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581109427202	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581109429439	Marionette	INFO	Listening on port 35703
+1581109429500	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1581109447725	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.3eNa2Vk2YqLq"
+*** You are running in headless mode.
+1581109448560	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581109448587	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581109448587	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581109448587	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581109448587	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581109450792	Marionette	INFO	Listening on port 38625
+1581109450835	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581109457615	Marionette	INFO	Stopped listening on port 38625
+1581109618648	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6M8cQyQtIK62"
+*** You are running in headless mode.
+1581109619531	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581109619557	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581109619557	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581109619557	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581109619557	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581109621770	Marionette	INFO	Listening on port 41349
+1581109621859	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581109630916	Marionette	INFO	Stopped listening on port 41349
+1581109683223	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.6SZlhmGyJH2O"
+*** You are running in headless mode.
+1581109684482	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581109684508	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581109684508	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581109684508	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581109684508	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581109686684	Marionette	INFO	Listening on port 36405
+1581109686738	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1581109692494	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.AoXq4ZHvvnR9"
+*** You are running in headless mode.
+1581109693908	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581109693932	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581109693932	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581109693932	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581109693932	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581109696222	Marionette	INFO	Listening on port 34695
+1581109696307	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581109706256	Marionette	INFO	Stopped listening on port 34695
+1581109790633	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ZARy8GjDxYis"
+*** You are running in headless mode.
+1581109791851	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581109791876	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581109791876	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581109791876	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581109791876	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581109794102	Marionette	INFO	Listening on port 38283
+1581109794145	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581109803578	Marionette	INFO	Stopped listening on port 38283
+1581110153261	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.52F2CEWlvTra"
+*** You are running in headless mode.
+1581110154355	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581110154383	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581110154383	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581110154383	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581110154383	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581110156592	Marionette	INFO	Listening on port 42139
+1581110156677	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581110174504	Marionette	INFO	Stopped listening on port 42139
+1581110380408	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.NUgUevgyjCfM"
+*** You are running in headless mode.
+1581110381450	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581110381475	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581110381475	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581110381475	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581110381476	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581110383769	Marionette	INFO	Listening on port 44371
+1581110383824	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581110392541	Marionette	INFO	Stopped listening on port 44371
+1581110785398	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fPYMo2ndfVVZ"
+*** You are running in headless mode.
+1581110786144	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581110786167	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581110786168	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581110786168	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581110786168	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581110788391	Marionette	INFO	Listening on port 34379
+1581110788409	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581110797639	Marionette	INFO	Stopped listening on port 34379
+1581110854880	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Yo0VjNEHaCHw"
+*** You are running in headless mode.
+1581110855891	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581110855919	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581110855920	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581110855920	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581110855920	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581110858369	Marionette	INFO	Listening on port 44949
+1581110858394	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581110868835	Marionette	INFO	Stopped listening on port 44949
+1581110910016	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Vsk0ovIqf280"
+*** You are running in headless mode.
+1581110911048	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581110911089	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581110911089	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581110911089	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581110911089	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581110913264	Marionette	INFO	Listening on port 35431
+1581110913326	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581110924042	Marionette	INFO	Stopped listening on port 35431
+1581111048779	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.gh7uHYd3c0YQ"
+*** You are running in headless mode.
+1581111049869	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581111049896	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581111049896	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581111049897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581111049897	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581111052227	Marionette	INFO	Listening on port 38381
+1581111052295	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581111062713	Marionette	INFO	Stopped listening on port 38381
+1581111128180	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.RZEepzk5f7i0"
+*** You are running in headless mode.
+1581111130594	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581111130623	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581111130623	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581111130623	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581111130623	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581111132685	Marionette	INFO	Listening on port 36155
+1581111132701	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581111142377	Marionette	INFO	Stopped listening on port 36155
+1581111168251	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DCjzh8WztBnH"
+*** You are running in headless mode.
+1581111169143	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581111169170	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581111169170	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581111169170	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581111169170	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581111171317	Marionette	INFO	Listening on port 39975
+1581111171362	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581111181676	Marionette	INFO	Stopped listening on port 39975
+1581111253934	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.sOEu8b6fBAQF"
+*** You are running in headless mode.
+1581111255047	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581111255076	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581111255076	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581111255076	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581111255076	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581111257137	Marionette	INFO	Listening on port 44873
+1581111257149	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581111265362	Marionette	INFO	Stopped listening on port 44873
+1581111299083	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ktcPvkMhaQvU"
+*** You are running in headless mode.
+1581111300113	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581111300137	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581111300137	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581111300138	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581111300138	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581111302618	Marionette	INFO	Listening on port 44515
+1581111302695	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581111311650	Marionette	INFO	Stopped listening on port 44515
+1581111418566	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qtm58rxSMij2"
+*** You are running in headless mode.
+1581111419659	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581111419685	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581111419685	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581111419685	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581111419685	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581111421860	Marionette	INFO	Listening on port 34975
+1581111421878	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581111432429	Marionette	INFO	Stopped listening on port 34975
+1581111466691	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.9cp3mOKYFMLQ"
+*** You are running in headless mode.
+1581111467665	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581111467690	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581111467690	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581111467690	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581111467690	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581111469734	Marionette	INFO	Listening on port 38567
+1581111469803	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581111479002	Marionette	INFO	Stopped listening on port 38567
+1581111548766	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.FG4JlurX1Rx8"
+*** You are running in headless mode.
+1581111549660	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581111549691	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581111549691	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581111549691	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581111549691	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581111551703	Marionette	INFO	Listening on port 43041
+1581111551786	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581111561603	Marionette	INFO	Stopped listening on port 43041
+1581111707262	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dAPq1iPh3DHX"
+*** You are running in headless mode.
+1581111707951	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581111707977	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581111707977	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581111707978	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581111707978	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581111710489	Marionette	INFO	Listening on port 35273
+1581111710574	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581111720875	Marionette	INFO	Stopped listening on port 35273
+Exiting due to channel error.
+1581111728495	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.M2R1IA25hWvr"
+*** You are running in headless mode.
+1581111729738	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1581111729763	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1581111729763	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1581111729763	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1581111729763	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1581111732216	Marionette	INFO	Listening on port 42173
+1581111732312	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.wikiaves.com.br/especies.php?t=t, line 584: SyntaxError: missing } after function body
+JavaScript note: https://www.wikiaves.com.br/especies.php?t=t, line 574: { opened at line 574, column 13
+1581111744451	Marionette	INFO	Stopped listening on port 42173
