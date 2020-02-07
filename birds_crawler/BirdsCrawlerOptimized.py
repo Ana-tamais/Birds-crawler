@@ -5,6 +5,7 @@ import urllib
 from selenium.webdriver.firefox.options import Options
 import requests
 import time
+import threading
 
 class BirdCrawler:
     """
