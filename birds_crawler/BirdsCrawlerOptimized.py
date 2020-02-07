@@ -7,10 +7,19 @@ import requests
 import time
 
 class BirdCrawler:
+    """
+    Class of crawler of wikiaves.com.br. 
+    It works with the following approach: It gets a initial link and gather all species names and links to crawl
+    their information (photo or audio). Then it access the link of all the species you want to crawl and scroll
+    down the page until there's no more information to be shown. Then it gets all html and save each information 
+    on a directory that it created (if photo, the format is .jpg, if audio, the format is .mp3)
+    
+    """
+    
     def __init__(self, store_path = '',
                  initial_link = 'https://www.wikiaves.com.br/especies.php?t=t',
                  photo = True,
-                 firefox_path = './geckodriver'):
+                 firefox_path = 'geckodriver'):
         
         self.specie = {}
         self.count_photo = {}
@@ -36,6 +45,7 @@ class BirdCrawler:
         self.soup = BeautifulSoup(html, 'html.parser')
         self.num_species = self.soup.find_all(class_ = 'font-blue-soft')[-1].text[:4]
         self.num_species = int(self.num_species)
+        
 
     
     def create_dir_photo(self):
@@ -75,8 +85,8 @@ class BirdCrawler:
             self.specie['{}'.format(10000 + k)] = None
     
     def get_image_links(self, id_):
-        my_filename = os.path.join('./links_image/links_{}.txt'.format(id_))
-        file_photo = open(my_filename, 'w')
+        my_filename = os.path.join(self.path + '/links_image/links_{}.txt'.format(id_))
+        file_photo = open(self.path + '/links_image/links_{}.txt'.format(id_), 'w')
         r = requests.get('https://www.wikiaves.com.br/getRegistrosJSON.php?tm=f&t=s&s={}&o=mp&o=mp&p=1'.format(id_))
         r = r.json()
         self.count_photo['{}'.format(id_)] = r['registros']['total']
@@ -88,6 +98,10 @@ class BirdCrawler:
             for link in range(1, 21):
                 try:
                     file_photo.write(r['registros']['itens']['{}'.format(str(link))]['link'] + '\n')
+                except KeyboardInterrupt:
+                    print('KeyboardInterrupt')
+                    break
+                    break
                 except:
                     break
             pag += 1
@@ -98,7 +112,7 @@ class BirdCrawler:
             self.get_image_links(id_)
             
     def get_sound_links(self, id_):
-        my_filename = os.path.join('./links_sound/links_{}.txt'.format(id_))
+        my_filename = os.path.join(self.path + '/links_sound/links_{}.txt'.format(id_))
         file_sound = open(my_filename, 'w')
         r = requests.get('https://www.wikiaves.com.br/getRegistrosJSON.php?tm=s&t=s&s={}&o=mp&o=mp&p=1'.format(id_))
         r = r.json()
@@ -111,10 +125,6 @@ class BirdCrawler:
             for link in range(1, 21):
                 try:
                     file_photo.write(str(r['registros']['itens']['{}'.format(link)]['link'] + '\n'))
-                except KeyboardInterrupt:
-                    print('KeyboardInterrupt')
-                    break
-                    break
                 except:
                     break
             pag += 1
@@ -157,6 +167,12 @@ class BirdCrawler:
             fim = time.time()
             print("Time = ", fim-inicio)
             print("Number of photos = ", self.count_photo['{}'.format(id_)])
+    
+    def use_thread(self, ids):
+        threads = []
+        for id_ in ids:
+            threads.append(threading.Thread(target=classe.get_all_image_links, args = ([str(id_)], )))
+            threads[-1].start()
         
         
     def crawl(self, species):
@@ -165,7 +181,8 @@ class BirdCrawler:
         self.get_num_species()
         self.create_dir()
         self.get_id()
-        self.get_all_links(species)
+        self.use_thread(species)
         self.browser.close()
         fim = time.time()
         print(fim-inicio)
+
