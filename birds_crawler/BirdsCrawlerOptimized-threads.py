@@ -135,24 +135,6 @@ class BirdCrawler:
             fim = time.time()
             print("Time = ", fim-inicio)
             print("Number of photos = ", self.count_photo['{}'.format(id_)])
-    
-    def use_thread(self, ids):
-        ids_species = []
-        for id_ in range(int(ids[0]), int(ids[0]) + 316):
-            ids_species.append(str(id_))
-            
-        threads = []
-        for id_ in range(0, len(ids_species), 9):
-            threads.append(threading.Thread(target=self.get_all_links, args = ([str(ids_species[id_]), 
-                                                                                  str(int(ids_species[id_]) + 1), 
-                                                                                  str(int(ids_species[id_]) + 2), 
-                                                                                  str(int(ids_species[id_]) + 3),
-                                                                                  str(int(ids_species[id_]) + 4),
-                                                                                  str(int(ids_species[id_]) + 5),
-                                                                                  str(int(ids_species[id_]) + 6),
-                                                                                  str(int(ids_species[id_]) + 7),
-                                                                                  str(int(ids_species[id_]) + 8)],)))
-            threads[-1].start()
         
     def crawl(self, species):
         inicio = time.time()
@@ -160,13 +142,12 @@ class BirdCrawler:
         self.get_num_species()
         self.create_dir()
         self.get_id()
-        self.use_thread(species)
+        self.get_all_links(species)
         self.browser.close()
         fim = time.time()
         print(fim-inicio)
-        
-##distribuir especie para cada um
 
+        
 def use_thread(ids):
     classes = {}
     ids_species = []
