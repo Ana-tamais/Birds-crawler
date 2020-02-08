@@ -154,7 +154,7 @@ class BirdCrawler:
         print(fim-inicio)
 
 
-def use_thread(ids):
+def use_thread(ids, store_path):
     inicio = time.time()
     classes = {}
     ids_species = []
@@ -163,7 +163,7 @@ def use_thread(ids):
 
     threads = []
     for id_ in range(0, len(ids_species)):
-        classes['{}'.format(id_)] = BirdCrawler(store_path = '/home/aninha/Documents/Birds_Project')
+        classes['{}'.format(id_)] = BirdCrawler(store_path = store_path)
         threads.append(threading.Thread(target=classes['{}'.format(id_)].get_all_links, args = ([str(ids_species[id_])],)))
     for i in threads:
         try:

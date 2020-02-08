@@ -11,4 +11,4 @@ args = parser.parse_args()
 classe = BirdCrawler(store_path = args.dir)
 classe.create_dir_linksimage()
 
-use_thread([args.id])
+use_thread([args.id], args.dir)
