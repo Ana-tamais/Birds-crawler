@@ -1,3 +1,0 @@
-['https://s3.amazonaws.com/media.wikiaves.com.br/images/7/7743q_1450c4b43164925ac5f08eeaa1ecbb60.jpg', 10718]
-['https://s3.amazonaws.com/media.wikiaves.com.br/images/7463/3647710q_c99416ce73e2a7e646ca12b500f8f848.jpg', 10718]
-['https://s3.amazonaws.com/media.wikiaves.com.br/images/9563/3659176q_acb95d4c3691053ed780cd3c4566c2cd.jpg', 10718]

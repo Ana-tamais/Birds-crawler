@@ -1,1 +1,0 @@
-['https://s3.amazonaws.com/media.wikiaves.com.br/images/0903/3090221q_cce55cd043902e0954e7c55ba054e331.jpg', 11947]
