@@ -1,0 +1,5 @@
+['https://s3.amazonaws.com/media.wikiaves.com.br/images/4533/3354760q_e208fefa9c7521b6fb40095c81b27b08.jpg', 11750]
+['https://s3.amazonaws.com/media.wikiaves.com.br/images/3733/3373159q_46d49ee6825c15e33631783949322180.jpg', 11750]
+['https://s3.amazonaws.com/media.wikiaves.com.br/images/8533/3358490q_608fc56be32eb314c020f398c4c8114c.jpg', 11750]
+['https://s3.amazonaws.com/media.wikiaves.com.br/images/3633/3363968q_b898b72b32836790ab389db0229eec8e.jpg', 11750]
+['https://s3.amazonaws.com/media.wikiaves.com.br/images/6563/3656159q_ccea0743b864b2280d87be68eafe9bc4.jpg', 11750]

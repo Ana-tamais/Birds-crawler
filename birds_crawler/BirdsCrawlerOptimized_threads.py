@@ -76,11 +76,14 @@ class BirdCrawler:
         self.my_filename['{}'.format(id_)] = os.path.join(self.path + '/links_image/links_{}.txt'.format(id_))
         self.file_photo['{}'.format(id_)] = open(self.path + '/links_image/links_{}.txt'.format(id_), 'w')
         self.r['{}'.format(id_)] = requests.get('https://www.wikiaves.com.br/getRegistrosJSON.php?tm=f&t=s&s={}&o=mp&o=mp&p=1'.format(id_))
-        self.r['{}'.format(id_)] = self.r['{}'.format(id_)].json()
+        try:
+            self.r['{}'.format(id_)] = self.r['{}'.format(id_)].json()
+        except ValueError:
+            print("No json, id = ", id_)
     
     def count_photo_and_specie(self, id_):
-        self.count_photo['{}'.format(id_)] = self.r['{}'.format(id_)]['registros']['total']
         try:
+            self.count_photo['{}'.format(id_)] = self.r['{}'.format(id_)]['registros']['total']
             self.specie['{}'.format(id_)] = self.r['{}'.format(id_)]['registros']['itens']['1']['sp']['idwiki']
         except:
             print("no image, id = ", id_)
@@ -94,20 +97,26 @@ class BirdCrawler:
         self.create_dependencies(id_)
         self.count_photo_and_specie(id_)
         self.pag['{}'.format(id_)] = 1
-        while self.r['{}'.format(id_)]['registros']['itens'] != {}:
-            self.get_json(id_)
-            while self.count['{}'.format(id_)] < 22:
-                try:
-                    self.file_photo['{}'.format(id_)].write("[" + self.r['{}'.format(id_)]['registros']['itens']['{}'.format(str(self.count['{}'.format(id_)]))]['link'].replace('#', 'q') + ', {}]'.format(id_) + '\n')
-                except KeyboardInterrupt:
-                    print('KeyboardInterrupt')
-                    break
-                except:
-                    break
-                self.count['{}'.format(id_)] += 1
-            self.pag['{}'.format(id_)] += 1
-        self.file_photo['{}'.format(id_)].close()
-    
+        try:
+            while self.r['{}'.format(id_)]['registros']['itens'] != {}:
+                self.get_json(id_)
+                while self.count['{}'.format(id_)] < 22:
+                    try:
+                        self.file_photo['{}'.format(id_)].write("['" + self.r['{}'.format(id_)]['registros']['itens']['{}'.format(str(self.count['{}'.format(id_)]))]['link'].replace('#', 'q') + "'" + ', {}]'.format(id_) + '\n')
+                    except KeyboardInterrupt:
+                        print('KeyboardInterrupt')
+                        break
+                    except requests.exceptions.ConnectionError:
+                        print('Timeout, id = ', id_)
+                    except:
+                        break
+                    self.count['{}'.format(id_)] += 1
+                self.pag['{}'.format(id_)] += 1
+            self.file_photo['{}'.format(id_)].close()
+        except requests.exceptions.ConnectionError:
+            print('Timeout, id = ', id_)
+        except:
+            print("No json, id = ", id_)
     def get_all_links(self, ids):
         for id_ in ids:
             self.get_image_links(id_)
@@ -154,17 +163,25 @@ class BirdCrawler:
         print(fim-inicio)
 
 
+
+
 def use_thread(ids, store_path):
     inicio = time.time()
     classes = {}
     ids_species = []
-    for id_ in range(int(ids[0]), int(ids[0]) + 316):
+    for id_ in range(int(ids[0]), int(ids[0]) + 100):
         ids_species.append(str(id_))
 
     threads = []
-    for id_ in range(0, len(ids_species)):
+    for id_ in range(0, len(ids_species), 5):
         classes['{}'.format(id_)] = BirdCrawler(store_path = store_path)
-        threads.append(threading.Thread(target=classes['{}'.format(id_)].get_all_links, args = ([str(ids_species[id_])],)))
+        threads.append(threading.Thread(target=classes['{}'.format(id_)].get_all_links, 
+                                        args = ([str(ids_species[id_]),                                                    
+                                                 str(int(ids_species[id_]) + 1),  
+                                                 str(int(ids_species[id_]) + 2),
+                                                 str(int(ids_species[id_]) + 3),
+                                                 str(int(ids_species[id_]) + 4)]
+                                                ,)))
     for i in threads:
         try:
             i.start()
